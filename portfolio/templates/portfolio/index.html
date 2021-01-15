@@ -56,7 +56,7 @@
         <span class="education-date">{{ portfolio.start_date|date:'F Y' }} – {{ portfolio.end_date|date:'F Y' }}</span>
         <h4>{{ portfolio.degree }}</h4>
         <p>
-            {{ portfolio.description }}
+            {{ portfolio.description|safe }}
         </p>
     </div>
     {% endfor %}
